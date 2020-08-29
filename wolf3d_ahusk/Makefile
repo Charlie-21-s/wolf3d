@@ -22,6 +22,7 @@ INC_C = ./includes/wolf3d.h
 SRC_FILES = main.c draw_fov.c draw_map.c draw_rect.c draw_walls.c input_pixel.c draw_skybox.c draw_texture.c init.c error.c read_map.c
 
 SDL2 = -L $(SDL2_LIB_DIR) -l SDL2-2.0.0
+#SDL2 = -lSDL2 -lm
 
 SRCS = $(addprefix $(SRC_DIR), $(SRC_FILES))
 OBJS = $(addprefix $(OBJ_DIR), $(SRC_FILES:.c=.o))
